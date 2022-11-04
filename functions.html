@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+   
+   ques 1:- <b>Create one function with zero parameter having a console statement;</b><br>
+
+ans:- 
+<pre>
+    function dummy(){
+    console.log("Hello")
+  }
+  dummy()
+</pre>
+
+output:-
+ <pre>
+   Hello
+</pre>
+
+ques 2:- <b> Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7" </b><br>
+
+ans:- 
+<pre>
+  function dummy(a,b){
+    const sum=a+b;
+    console.log("sum of "+ a,b + " is"+sum )
+  }
+  dummy(3,4)
+</pre>
+
+output:- 
+<pre>
+  sum of 3 4 is7
+</pre>
+
+
+ques 3:- <b>Create one arrow function  </b><br>
+
+ans:- 
+<pre>
+  const X = () =>{
+    let a = 5, b = 4;
+    return a+b;
+  }
+  console.log(X()); 
+</pre>
+ 
+output:-
+<pre>
+9
+</pre> 
+
+ques 4:- <b> "Print output: 
+  <pre>
+    var x = 21;
+    var girl = function () {
+        console.log(x);
+        var x = 20;
+    };
+    girl ();" </b><br>
+  </pre>
+
+output:- 
+<pre> undefined </pre>
+
+
+ques 5:- <b> "Print output: 
+  <pre> 
+  var x = 21;
+    girl ();
+    console.log(x)
+    function girl() {
+        console.log(x);
+        var x = 20;
+    };
+  </b><br>
+</pre>
+
+  output:- 
+  <pre>
+    undefined
+     21
+  </pre>
+ 
+  
+ques 6:- <b>Print output
+ <pre>   var x = 21;
+    a();
+    b();
+    
+      function a() {
+        
+       x = 20;
+      console.log(x);
+    };
+     function b() {
+        
+        x = 40;
+       console.log(x);
+    };  </b><br>
+  </pre>
+
+output:- 
+<pre>
+  20
+  40
+</pre>
+
+
+ques 7:- <b> Write a function that accepts parameter n and returns factorial of n </b><br>
+
+ans:- 
+<pre>
+  function factorial(n){
+    let answer = 1;
+    if (n == 0 || n == 1){
+      return answer;
+    }else{
+      for(var i = n; i >= 1; i--){
+        answer = answer * i;
+      }
+      return answer;
+    }  
+  }
+
+  let n = 4;
+  answer = factorial(n)
+  console.log("The factorial of " + n + " is " + answer);
+</pre>
+ 
+output:- 
+<pre>
+  The factorial of 4 is 24
+</pre>
+
+</body>
+</html>
